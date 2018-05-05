@@ -14,7 +14,7 @@ It is important to ensure the config.cfg file also present in this directory isn
 
 If syncing across steam is enabled (enabling your cfg to travel between machines) the
 
-`...Steam\userdata\<Steam3 ID>\730\local\cfg` location also houses a `config.cfg` (which should also not be set to Read-Only) and this is where pushes to the config from `autoexec.cfg` via `host_writeconfig`are currently stored, not the one in 
+`...Steam\userdata\<STEAM_ID>\730\local\cfg` location also houses a `config.cfg` (which should also not be set to Read-Only) and this is where pushes to the config from `autoexec.cfg` via `host_writeconfig`are currently stored, not the one in 
 
 `...\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg`. If you don't want it to sync on Steam, you can add this to launch options `-autoconfig +cl_cloud_settings 0` and then the one in 
 
