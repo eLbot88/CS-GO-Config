@@ -1,0 +1,78 @@
+Interesting cs go cfg snippets:
+
+// Weapon Bindings example (awful actual buys)
+bind "KP_SLASH" "buy ssg08"
+bind "KP_MULTIPLY" "buy elite"
+bind "KP_MINUS" "buy defuser"
+bind "KP_HOME" "buy ak47; buy m4a1;buy vesthelm;buy defuser"
+bind "KP_UPARROW" "buy awp"
+bind "KP_PGUP" "buy awp; buy vesthelm;buy defuser"
+bind "KP_PLUS" "buy vest"
+bind "KP_LEFTARROW" "buy ak47;buy m4a1"
+bind "KP_5" "buy tec9"
+bind "KP_RIGHTARROW" "buy p90"
+bind "KP_END" "buy smokegrenade"
+bind "KP_DOWNARROW" "buy p250"
+bind "KP_PGDN" "buy molotov;buy incgrenade"
+bind "KP_ENTER" "buy vesthelm"
+bind "KP_INS" "buy hegrenade"
+bind "KP_DEL" "buy flashbang"
+//=====================================================//
+//     Num     |      /      |      *      |     -     //
+//     Lock    |    SCOUT    | Dual Elites |    KIT    //
+//-------------|-------------|-------------|-----------//
+//      7      |      8      |      9      |     +     //
+//   ASSAULT   |     AWP     |    AWPER    |           //
+//-------------|-------------|-------------|    VEST   //
+//      4      |      5      |      6      |           //
+//   M4A1/AK   |  Five-Seven |     P90     |           //
+//-------------|-------------|-------------|-----------//
+//      1      |      2      |      3      |   Enter   //
+//    SMOKE    |    P250     |   MOLOTOV   |           //
+//-------------|-------------|-------------|  VESTHELM //
+//      0                    |      .      |           //
+//        HE GRENADE         |    FLASH    |           //
+//=====================================================//
+
+---------------------
+//Stutter-step, use a key to arrest motion after binding movement to an alias.
+
+bind w +mfwd
+bind s +mbck
+bind a +mlft
+bind d +mrgt
+bind [key] +stop
+
+alias +mfwd "+forward;alias -stop +forward;alias +stop -forward"
+alias +mbck "+back;alias -stop +back;alias +stop -back"
+alias +mlft "+moveleft;alias -stop +moveleft;alias +stop -moveleft"
+alias +mrgt "+moveright;alias -stop +moveright;alias +stop -moveright"
+alias -mfwd "-forward;alias -stop none"
+alias -mbck "-back;alias -stop none"
+alias -mlft "-moveleft;alias -stop none"
+alias -mrgt "-moveright;alias -stop none"
+alias none ""
+
+------------------------------
+//Rainbow crosshair.
+
+cl_crosshaircolor 5
+
+bind w "+forward; cl_crosshaircolor_r 0;cl_crosshaircolor_g 255; cl_crosshaircolor_b 0"
+
+bind a "+moveleft; cl_crosshaircolor_r 255; cl_crosshaircolor_g 255; cl_crosshaircolor_b 255"
+
+bind s "+back; cl_crosshaircolor_r 0; cl_crosshaircolor_g 0; cl_crosshaircolor_b 255"
+
+bind d "+moveright; cl_crosshaircolor_r 255; cl_crosshaircolor_g 255; cl_crosshaircolor_b 0"
+
+bind MOUSE1 "+attack; cl_crosshaircolor_r 255; cl_crosshaircolor_g 0; cl_crosshaircolor_b 0; spec_next"
+
+bind ctrl "+duck; cl_crosshaircolor_r 0; cl_crosshaircolor_g 255; cl_crosshaircolor_b 255"
+
+bind shift "+walk; cl_crosshaircolor_r 255; cl_crosshaircolor_g 0; cl_crosshaircolor_b 255"
+
+
+--------------------
+
+
