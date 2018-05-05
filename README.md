@@ -6,7 +6,7 @@ Currently I am FOCUSED - changes likely.
 
 The earliest versions of this config will include some odd scripts from Gamebanana purely out of experimentation and to understand what other players might have at their fingertips in fully legal MM servers.
 
-[CEVO/ ESEA, Faceit or other leagues/ ladders will have their own rules surrounding what is acceptable in a cfg for their games.  It is 100% your responsibility to ensure you are following their rules!!!]
+### [CEVO/ ESEA, Faceit or other leagues/ ladders will have their own rules surrounding what is acceptable in a cfg for their games.  It is 100% your responsibility to ensure you are following their rules!!!]
 
 Put "autoexec.cfg" in `...\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg` or selectively pick the parts that you want from it and add to your own manually.
 
@@ -20,7 +20,7 @@ If syncing across steam is enabled (enabling your cfg to travel between machines
 
 `...\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg` will again take precedence. 
 
-### Current Scripts / Useful commands
+## Current Scripts / Useful commands
 
 + DMG Display: Toggles On/Off the Printing of end of round damage stats directly above radar without the need to check console, also highlights those damage entries in console whilst toggled ON.
 + Team Equipment: Toggles On/Off the Display of team equipment data, allowing some position information to be taken on teammates through walls and full knowledge of their equipment loadout.  There is the option to call this script on reload or scoreboard if wanted.
@@ -28,7 +28,7 @@ If syncing across steam is enabled (enabling your cfg to travel between machines
 + Print Logic: The commands "xhair" and "viewmod" are created to print and highlight associated config settings. (Hoping to expand to most of the first 10 steps eventually).
 + cl_teamid_overhead_always "1":  Place Arrow above team-mates (Even through walls... volvo!)
 
-### Launch Options
+## Launch Options
 
 Autoexec.cfg is automatically run if it is present in this folder without the need of a launch flag.  
 The launch order is 1) Config.cfg THEN 2) Autoexec.cfg. 
@@ -44,25 +44,30 @@ These are my current launch options:
 
 Enter launch options at `Steam > Library > Counter-Strike: Global Offensive (right-click) > Properties > Set Launch Options...`
 
-### Other Settings
+## Other Settings
 + 2560x1440, purely preference
 <To Do> - Windows settings / regfile changes if any are still relevant.
 
-### Relevant Hardware
+## Relevant Hardware
 Simply a list of my hardware, will explain some of the logic behind certain settings.
 
 + Mouse: Zowie EC2-A
 + Mouse Surface: Steel-Series Dex
 + Keyboard: Steel-Series 7G (Blacks)
-+ Headset: <todo>
-+ Soundcard: <todo>
++ Headset: Sennheiser Game ONE - Open headset
++ Soundcard: Sennheiser 3DG4ME1
 + Monitor: Asus ROG PG279 set to 144hz
 + GPU: 1080Ti
-+ Net connection: UK - Virgin Vivid 200 giving 230dn/12up and averaging a 20-30ms connection to closest node.
++ Net connection: UK - Virgin Media Vivid 200; giving 230dn/12up from Ookla and averaging a 20-30ms connection to closest node.
 
-### Things discovered as a result of this process.
+## Things discovered as a result of this process.
 
 + The Range Casting of connections and what that means for pings now.
 + That you can view your team's equipment at all never-lone through walls!
 + That you can print your damage stats directly into window above radar!
 + That it's possible to create moderate print logic for some groups of settings.
+
+## To-Do
+
++ Make custom radio menus for mute settings
++ Look at some of the custom filters for text
