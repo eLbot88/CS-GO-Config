@@ -12,22 +12,21 @@ Put "autoexec.cfg" in `...\Steam\steamapps\common\Counter-Strike Global Offensiv
 
 It is important to ensure the config.cfg file also present in this directory isn't set to Read-Only.  
 
-If syncing across steam is enabled (enabling your cfg to travel between machines) the `...Steam\userdata\<Steam3 ID>\730\local\cfg` location also houses a `config.cfg` (which should also not be set to Read-Only) and this is where pushes to the config from `autoexec.cfg` are currently stored, not the one in `...\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg`. If you don't want it to sync on Steam, you can add this to launch options `-autoconfig +cl_cloud_settings 0` and then the one in `...\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg` will again take precedence.
-
-Autoexec.cfg is automatically run if it is present in this folder without the need of a launch flag.  
-The launch order is 1) Config.cfg THEN 2) Autoexec.cfg.  
+If syncing across steam is enabled (enabling your cfg to travel between machines) the `...Steam\userdata\<Steam3 ID>\730\local\cfg` location also houses a `config.cfg` (which should also not be set to Read-Only) and this is where pushes to the config from `autoexec.cfg` are currently stored, not the one in `...\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg`. If you don't want it to sync on Steam, you can add this to launch options `-autoconfig +cl_cloud_settings 0` and then the one in `...\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg` will again take precedence. 
 
 ### Launch Options
 
+Autoexec.cfg is automatically run if it is present in this folder without the need of a launch flag.  
+The launch order is 1) Config.cfg THEN 2) Autoexec.cfg. 
+
 These are my current launch options for a 144hz monitor (ASUS ROG PG279)
 
-	-novid -nojoy -freq 144 -refresh 144 -tickrate 128 +cl_forcepreload 1
+	-novid -nojoy -tickrate 128 +cl_forcepreload 1
 	
 + -novid: Starting the game with this launch option will remove the Valve intro that normally plays at the beginning.
 + -nojoy: Removes joystick support and increases fps in some cases by reducing memory footprint
-+ -freq:
-+ -tickrate:
-+ +cl_forcepreload:
++ -tickrate 128: Makes any local server run at 128tk (useful vs bot games if you've long left MM in the dirt)
++ +cl_forcepreload 1: Preloads map and sound assets. (supposedly)
 
 Enter launch options at `Steam > Library > Counter-Strike: Global Offensive (right-click) > Properties > Set Launch Options...`
 
