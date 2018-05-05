@@ -12,9 +12,10 @@ Put "autoexec.cfg" in `...\Steam\steamapps\common\Counter-Strike Global Offensiv
 
 It is important to ensure the config.cfg file also present in this directory isn't set to Read-Only.  
 
-If syncing across steam is enabled (enabling your cfg to travel between machines) the ...Steam\userdata\<Steam3 ID>\730\local\cfg location also houses a config.cfg (which should also not be set to Read-Only) and this is where pushes to the config from autoexec.cfg are currently stored, not the one in ...\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg . If you don't want it to sync on Steam, you can add this to launch options -autoconfig +cl_cloud_settings 0 and then the one in ...\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg will again take precedence.
+If syncing across steam is enabled (enabling your cfg to travel between machines) the `...Steam\userdata\<Steam3 ID>\730\local\cfg` location also houses a `config.cfg` (which should also not be set to Read-Only) and this is where pushes to the config from `autoexec.cfg` are currently stored, not the one in `...\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg`. If you don't want it to sync on Steam, you can add this to launch options `-autoconfig +cl_cloud_settings 0` and then the one in `...\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg` will again take precedence.
 
-Autoexec.cfg is automatically run if it is present in this folder without the need of a launch flag.  The launch order is 1)Config.cfg , 2)Autoexec.cfg.  
+Autoexec.cfg is automatically run if it is present in this folder without the need of a launch flag.  
+The launch order is 1) Config.cfg THEN 2) Autoexec.cfg.  
 
 ### Launch Options
 
