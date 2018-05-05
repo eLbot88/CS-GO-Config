@@ -32,7 +32,7 @@ If syncing across steam is enabled (enabling your cfg to travel between machines
 Autoexec.cfg is automatically run if it is present in this folder without the need of a launch flag.  
 The launch order is 1) Config.cfg THEN 2) Autoexec.cfg. 
 
-These are my current launch options for a 144hz monitor (ASUS ROG PG279)
+These are my current launch options:
 
 	-novid -nojoy -tickrate 128 +cl_forcepreload 1
 	
