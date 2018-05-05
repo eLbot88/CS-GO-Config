@@ -26,6 +26,7 @@ If syncing across steam is enabled (enabling your cfg to travel between machines
 + Team Equipment: Toggles On/Off the Display of team equipment data, allowing some position information to be taken on teammates through walls and full knowledge of their equipment loadout.  There is the option to call this script on reload or scoreboard if wanted.
 + Jumpthrow: A Commonly used grenade throw that is tricky to perform reliably without such a script.
 + Print Logic: The commands "xhair" and "viewmod" are created to print and highlight associated config settings. (Hoping to expand to most of the first 10 steps eventually).
++ cl_teamid_overhead_always "1":  Place Arrow above team-mates (Even through walls... volvo!)
 
 ### Launch Options
 
@@ -45,7 +46,7 @@ Enter launch options at `Steam > Library > Counter-Strike: Global Offensive (rig
 
 ### Other Settings
 + 2560x1440, purely preference
->To Do - Windows settings / regfile changes if any are still relevant.
+<To Do> - Windows settings / regfile changes if any are still relevant.
 
 ### Relevant Hardware
 Simply a list of my hardware, will explain some of the logic behind certain settings.
@@ -53,6 +54,8 @@ Simply a list of my hardware, will explain some of the logic behind certain sett
 + Mouse: Zowie EC2-A
 + Mouse Surface: Steel-Series Dex
 + Keyboard: Steel-Series 7G (Blacks)
++ Headset: <todo>
++ Soundcard: <todo>
 + Monitor: Asus ROG PG279 set to 144hz
 + GPU: 1080Ti
 + Net connection: UK - Virgin Vivid 200 giving 230dn/12up and averaging a 20-30ms connection to closest node.
