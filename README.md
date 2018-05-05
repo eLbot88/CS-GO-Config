@@ -71,3 +71,7 @@ Simply a list of my hardware, will explain some of the logic behind certain sett
 
 + Make custom radio menus for mute settings
 + Look at some of the custom filters for text
+
+## Acknowledgements
+
++ Xhair and Viewmod settings print logic adapated from Iwan0ffwOw~'s scripts on Gamebanana.
