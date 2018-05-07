@@ -2,7 +2,7 @@
 
 This is my personal CS:GO autoexec.cfg which I tweak periodically depending on how focused I am on CS:GO at the time.
 
-Currently I am FOCUSED - changes likely.
+Currently I am FOCUSED - changes likely.  Last edit: 07/05/2018.
 
 The earliest versions of this config will include some odd scripts from Gamebanana purely out of experimentation and to understand what other players might have at their fingertips in fully legal MM servers.
 
@@ -35,12 +35,13 @@ The launch order is 1) Config.cfg THEN 2) Autoexec.cfg.
 
 These are my current launch options:
 
-	-novid -nojoy -tickrate 128 +cl_forcepreload 1
+	-novid -nojoy -tickrate 128 +cl_forcepreload 1 -language textmod
 	
 + -novid: Starting the game with this launch option will remove the Valve intro that normally plays at the beginning.
 + -nojoy: Removes joystick support and increases fps in some cases by reducing memory footprint
 + -tickrate 128: Makes any local server run at 128tk (useful vs bot games if you've long left MM in the dirt)
 + +cl_forcepreload 1: Preloads map and sound assets. (supposedly)
++ -language textmod: Loads Orel's text mod.
 
 Enter launch options at `Steam > Library > Counter-Strike: Global Offensive (right-click) > Properties > Set Launch Options...`
 
@@ -70,8 +71,7 @@ Simply a list of my hardware, will explain some of the logic behind certain sett
 ## To-Do
 
 + Make custom radio menus for mute settings
-+ Look at some of the custom filters for text
 
 ## Acknowledgements
 
-+ Xhair and Viewmod settings print logic adapated from Iwan0ffwOw~'s scripts on Gamebanana.
++ Xhair and Viewmod settings print logic first adapated from Iwan0ffwOw~'s scripts on Gamebanana.
