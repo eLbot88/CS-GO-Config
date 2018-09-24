@@ -1,8 +1,8 @@
 # eLbot's CS:GO Config
 
-This is my personal CS:GO autoexec.cfg which I tweak periodically depending on how focused I am on CS:GO at the time.
+This is my personal CS:GO autoexec.cfg which I tweak periodically depending on how focused I am on CS:GO at the time.  It has not yet seen a major overhaul since panerama broke some of the functionality (dmg prints etc).
 
-Currently I am FOCUSED - changes likely.  Last edit: 07/05/2018.
+Currently I am not really attached to the game.  Last edit: 24/09/2018.
 
 The earliest versions of this config will include some odd scripts from Gamebanana purely out of experimentation and to understand what other players might have at their fingertips in fully legal MM servers.
 
@@ -14,9 +14,9 @@ It is important to ensure the config.cfg file also present in this directory isn
 
 If syncing across steam is enabled (enabling your cfg to travel between machines) the
 
-`...Steam\userdata\<STEAM_ID>\730\local\cfg` location also houses a `config.cfg` (which should also not be set to Read-Only) and this is where pushes to the config from `autoexec.cfg` via `host_writeconfig`are currently stored, not the one in 
+`...Steam\userdata\<STEAM_ID>\730\local\cfg` location also houses a `config.cfg` (which should also not be set to Read-Only) and this is where pushes to the config from `autoexec.cfg` via `host_writeconfig` are currently stored, not the one in 
 
-`...\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg`. If you don't want it to sync on Steam, you can add this to launch options `-autoconfig +cl_cloud_settings 0` and then the one in 
+`...\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg` as other documentation suggests. If you don't want it to sync on Steam, you can add this to launch options `-autoconfig +cl_cloud_settings 0` and then the one in 
 
 `...\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg` will again take precedence. 
 
@@ -25,8 +25,8 @@ If syncing across steam is enabled (enabling your cfg to travel between machines
 + DMG Display: Toggles On/Off the Printing of end of round damage stats directly above radar without the need to check console, also highlights those damage entries in console whilst toggled ON.
 + Team Equipment: Toggles On/Off the Display of team equipment data, allowing some position information to be taken on teammates through walls and full knowledge of their equipment loadout.  There is the option to call this script on reload or scoreboard if wanted.
 + Jumpthrow: A Commonly used grenade throw that is tricky to perform reliably without such a script.
-+ Print Logic: The commands "xhair" and "viewmod" are created to print and highlight associated config settings. (Hoping to expand to most of the first 10 steps eventually).
-+ cl_teamid_overhead_always "1":  Place Arrow above team-mates (Even through walls... volvo!)
++ Print Logic: The commands "xhair" and "viewmod" etc are created to print and highlight associated config settings. (Hoping to expand to most of the first 10 steps eventually).
++ cl_teamid_overhead_always "1":  Place Arrow above team-mates (Even through walls... volvo!?!)
 
 ## Launch Options
 
@@ -35,13 +35,12 @@ The launch order is 1) Config.cfg THEN 2) Autoexec.cfg.
 
 These are my current launch options:
 
-	-novid -nojoy -tickrate 128 +cl_forcepreload 1 -language textmod
+	-novid -nojoy -tickrate 128 +cl_forcepreload 1
 	
 + -novid: Starting the game with this launch option will remove the Valve intro that normally plays at the beginning.
 + -nojoy: Removes joystick support and increases fps in some cases by reducing memory footprint
 + -tickrate 128: Makes any local server run at 128tk (useful vs bot games if you've long left MM in the dirt)
-+ +cl_forcepreload 1: Preloads map and sound assets. (supposedly)
-+ -language textmod: Loads Orel's text mod.
++ +cl_forcepreload 1: Preloads map and sound assets. (supposedly... still see about 40% of it loading during first event rather than precalled.)
 
 Enter launch options at `Steam > Library > Counter-Strike: Global Offensive (right-click) > Properties > Set Launch Options...`
 
