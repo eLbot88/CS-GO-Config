@@ -61,7 +61,7 @@ Simply a list of my hardware, will explain some of the logic behind certain sett
 + Soundcard: Sennheiser 3DG4ME1
 + Monitor: Asus ROG PG279 set to 144hz
 + GPU: 1080Ti
-+ Net connection: UK - Virgin Media Vivid 200; giving 230dn/12up from Ookla and averaging a 20-30ms connection to closest node.
++ Net connection: UK - Virgin Media Vivid 200; giving 230dn/12up from Ookla and averaging a 20-30ms connection to closest valve node.
 
 ## Things discovered as a result of this process.
 
