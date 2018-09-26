@@ -1,6 +1,6 @@
 # eLbot's CS:GO Config
 
-This is my personal CS:GO autoexec.cfg which I tweak periodically depending on how focused I am on CS:GO at the time.  It has not yet seen a major overhaul since the panorama update broke some minor bits of functionality (dmg prints etc).
+This is my personal CS:GO <a href="https://github.com/eLbot88/CS-GO-Config/blob/master/autoexec.cfg">autoexec.cfg</a> which I tweak periodically depending on how focused I am on CS:GO at the time.  It has not yet seen a major overhaul since the panorama update broke some minor bits of functionality (dmg prints etc).
 
 Currently I am not really attached to the game.  Last edit: 24/09/2018.
 
